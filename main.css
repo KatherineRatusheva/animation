@@ -1,0 +1,50 @@
+.background {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    animation: animation 5s infinite linear;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(720deg);
+        top: 20px;
+        left: 20px;
+    }
+
+    25% {
+        border-radius: 30%;
+        top: 20px;
+        left: calc(100% - 220px);
+    }
+
+    50% {
+        border-radius: 50%;
+        top: calc(100% - 220px);
+        left: calc(100% - 220px);
+    }
+
+    75% {
+        border-radius: 30%;
+        top: calc(100% - 220px);
+        left: 20px;
+    }
+
+    100% {
+        border-radius: 0%;
+        top: 20px;
+        left: 20px;
+    }
+
+}
